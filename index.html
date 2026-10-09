@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapeamento Bourdieusiano | Campo Político e Econômico</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js para renderizar o gráfico cartesiano 2D -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>Mapeamento do Campo Político</h1>
+      <p>Análise de Capital Financeiro vs. Voto e Espectro Político baseada em Pierre Bourdieu</p>
+    </header>
+
+    <!-- FORMULÁRIO -->
+    <section id="quiz-card" class="card">
+      <h2>Mapeie sua Posição Social</h2>
+      <form id="bourdieu-form">
+        
+        <div class="form-group">
+          <label for="renda">Renda Mensal Familiar (Capital Financeiro):</label>
+          <select id="renda" required>
+            <option value="1">Até 2 Salários Mínimos</option>
+            <option value="2">De 2 a 5 Salários Mínimos</option>
+            <option value="3">De 5 a 12 Salários Mínimos</option>
+            <option value="4">Acima de 12 Salários Mínimos</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="patrimonio">Patrimônio / Bens acumulados:</label>
+          <select id="patrimonio" required>
+            <option value="1">Sem bens relevantes (Moradia alugada / sem veículos)</option>
+            <option value="2">Bens básicos (Casa própria ou veículo popular)</option>
+            <option value="3">Patrimônio intermediário (Imóveis / Investimentos até R$ 500k)</option>
+            <option value="4">Alto patrimônio (Múltiplos imóveis / Aplicações > R$ 500k)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="orientacao">Em qual espectro político você costuma votar?</label>
+          <select id="orientacao" required>
+            <option value="-8">Extrema Esquerda / Esquerda Radical</option>
+            <option value="-4">Esquerda / Centro-Esquerda</option>
+            <option value="0">Centro / Indeciso / Voto Nulo</option>
+            <option value="4">Direita / Centro-Direita</option>
+            <option value="8">Extrema Direita / Conservadorismo Liberal</option>
+          </select>
+        </div>
+
+        <button type="submit" id="btn-analisar">Mapear minha Posição no Gráfico</button>
+      </form>
+    </section>
+
+    <!-- RESULTADO E GRÁFICO -->
+    <section id="result-card" class="card hidden">
+      <h2>Sua Posição no Espaço Político-Econômico</h2>
+      <div class="chart-container">
+        <canvas id="bourdieuChart"></canvas>
+      </div>
+      <div id="analise-texto" class="analise-box"></div>
+      <button id="btn-reiniciar">Fazer Nova Análise</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
