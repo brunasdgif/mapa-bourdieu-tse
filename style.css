@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 680px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #38bdf8;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.card {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #f1f5f9;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background: #0f172a;
+  border: 1px solid #475569;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+select:focus {
+  border-color: #38bdf8;
+}
+
+button {
+  width: 100%;
+  padding: 0.85rem;
+  background: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0369a1;
+}
+
+.hidden {
+  display: none;
+}
+
+.chart-container {
+  position: relative;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.analise-box {
+  background: #0f172a;
+  padding: 1.2rem;
+  border-left: 4px solid #38bdf8;
+  border-radius: 4px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
