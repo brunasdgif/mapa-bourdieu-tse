@@ -27,6 +27,7 @@ Analisar a distribuição dos diferentes tipos de capitais entre os atores polí
 
 ```text
 ├── index.html         # Estrutura principal da página web
+├── style.css          # Estilização visual e layout da interface
 ├── script.js          # Lógica do fetch, tratamento e unificação dos JSONs
 ├── candidatos.json    # Dados extraídos do TSE (instrução, ocupação, partido)
 ├── bens.json          # Dados agregados do patrimônio dos candidatos
